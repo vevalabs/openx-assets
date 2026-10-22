@@ -73,8 +73,8 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked,id=${TARGETPLATFORM}
       python3-dev \
       python3-pip \
       python3-venv \
+      python-is-python3 \
       libxml2 \
-      libx11-6 \
       \
       && \
     apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
@@ -83,6 +83,11 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked,id=${TARGETPLATFORM}
     export DEBIAN_FRONTEND=noninteractive && \
     apt-get update -qq && \
     apt-get install -qy --no-install-recommends \
+      libx11-6 \
+      libegl1 \
+      libegl-mesa0 \
+      libxrandr2 \
+      libxinerama1 \
       libxrender1 \
       libxxf86vm1 \
       libxfixes3 \
