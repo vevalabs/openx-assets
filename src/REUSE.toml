@@ -154,3 +154,11 @@ SPDX-FileCopyrightText = [
     "2023 kekomag <https://sketchfab.com/kekomag>, licensed under CC-BY-4.0"
 ]
 SPDX-License-Identifier = "MPL-2.0 AND CC-BY-4.0"
+
+[[annotations]]
+path = ["vehicles/generic_f1_racer/**"]
+SPDX-FileCopyrightText = [
+    "2026 Dogan Ulus <dogan.ulus@bogazici.edu.tr>",
+    "2026 CaptainAlperen <https://sketchfab.com/alperenptn42>, licensed under CC-BY-4.0"
+]
+SPDX-License-Identifier = "MPL-2.0 AND CC-BY-4.0"
